@@ -1,0 +1,80 @@
+.aboutH {
+    text-align: center;
+    margin-top: 1rem; /* Changed from cm to rem for consistency */
+    animation: fadeInAndScale 2s ease-out;
+}
+
+.aboutp {
+    text-align: center;
+    margin: 20px 40px 4rem; /* Combined margins for brevity */
+}
+
+.skill-container {
+    margin: 15px auto;
+    width: 50%;
+    text-align: center;
+    /* background-color: rgb(255, 230, 0); */
+    border-radius: 20px;
+}
+
+.skill-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.progress-bar-container { /* Added missing dot (.) for class selector */
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 20px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 10px;
+    padding: 0 5px;
+    max-width: 100%;
+    transition: width 0.4s ease;
+}
+
+.nextjs { background-color: #007acc; width: 60%; }
+.tailwind { background-color: #007acc; width: 75%; }
+.html { background-color: #007acc; width: 85%; }
+.css { background-color: #007acc; width: 85%; }
+.java { background-color: #007acc; width: 75%; }
+.typescript { background-color: #007acc; width: 80%; }
+
+.mainskil {
+    margin-bottom: 4rem; /* Changed from cm to rem */
+    animation: slideInFromRightAndScale 1s ease-out;
+}
+
+@keyframes fadeInAndScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInFromRightAndScale {
+    0% {
+        opacity: 0;
+        transform: translateX(60px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
